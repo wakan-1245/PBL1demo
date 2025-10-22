@@ -1,0 +1,78 @@
+/* ベースリセット */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: "Noto Sans JP", "ヒラギノ角ゴシック ProN", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; color: #222; background: #f7f7f7; }
+
+/* レイアウト */
+.container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+.site-header { text-align: center; padding: 2rem 1rem 1rem; }
+.site-header h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+.lead { color: #555; }
+
+/* グリッド：カードをレスポンシブに並べる */
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+/* カード */
+.culture-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(20,20,20,0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* 画像エリア（背景画像） */
+.culture-image {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 比率 */
+  background-size: cover;
+  background-position: center;
+}
+
+/* カード本文 */
+.culture-body {
+  padding: 1rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.culture-title { font-size: 1.25rem; color: #16324f; margin-bottom: 0.25rem; }
+.culture-short { color: #444; font-weight: 600; }
+
+/* セクションの見出し */
+.culture-long h3,
+.culture-history h3 { font-size: 0.95rem; color: #2c5364; margin-top: 0.25rem; margin-bottom: 0.35rem; }
+
+/* 段落スタイル */
+.culture-long p,
+.culture-history p { color: #333; line-height: 1.6; font-size: 0.95rem; }
+
+/* リンク・ボタン */
+.culture-links { margin-top: auto; } /* ボタンを下揃えにする */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(180deg,#2b6fb1,#1f4f82);
+  color: #fff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* フッター */
+.site-footer { text-align: center; padding: 1.25rem; color: #666; font-size: 0.9rem; }
+
+/* モバイルの微調整 */
+@media (max-width: 480px) {
+  .site-header h1 { font-size: 1.4rem; }
+  .culture-body { padding: 0.9rem; }
+  .culture-title { font-size: 1.05rem; }
+}
