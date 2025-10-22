@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>日本の文化紹介</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>日本の文化紹介</h1>
+    <p class="lead">さまざまな日本の文化を、同じレイアウトで分かりやすく紹介します。</p>
+  </header>
+
+  <main class="container">
+    <!-- カードを増やして複数の文化を紹介できます -->
+    <section class="culture-grid">
+      <!-- 例: 茶道 -->
+      <article class="culture-card" aria-labelledby="tea-title">
+        <div class="culture-image" role="img" aria-label="茶道の画像を置く場所" style="background-image: url('images/tea-ceremony.jpg');">
+          <!-- 背景画像の代わりに <img> を使ってもOK -->
+        </div>
+
+        <div class="culture-body">
+          <h2 id="tea-title" class="culture-title">茶道（さどう・ちゃどう）</h2>
+          <p class="culture-short">和の精神を大切にしたお茶を点てる伝統的な作法と芸術。</p>
+
+          <div class="culture-long">
+            <h3>詳しい説明</h3>
+            <p>茶道は、抹茶を用いて客をもてなす儀礼的な文化です。点前（てまえ）と呼ばれる所作、道具、茶室のしつらえ、季節感や一期一会の精神などが特徴です。精神性・美意識・簡潔さを重んじます。</p>
+          </div>
+
+          <div class="culture-history">
+            <h3>歴史</h3>
+            <p>室町時代に村田珠光などによって精神的側面が強調され、千利休によって現在知られる茶道の形式が確立されました。以後、各流派（表千家・裏千家など）が発展しました。</p>
+          </div>
+
+          <div class="culture-links">
+            <a class="btn" href="https://example.com/tea" target="_blank" rel="noopener noreferrer">公式・参考ページ</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 例: 着物 -->
+      <article class="culture-card" aria-labelledby="kimono-title">
+        <div class="culture-image" role="img" aria-label="着物の画像を置く場所" style="background-image: url('images/kimono.jpg');"></div>
+
+        <div class="culture-body">
+          <h2 id="kimono-title" class="culture-title">着物</h2>
+          <p class="culture-short">日本の伝統的な和服。場面や季節によって装いが変わる。</p>
+
+          <div class="culture-long">
+            <h3>詳しい説明</h3>
+            <p>着物は布の裁断や重ね方で美しさを表現する衣服です。帯の結び方や小物の組み合わせでフォーマルからカジュアルまで多彩な表情を持ちます。婚礼や成人式、茶会など特別な場で用いられます。</p>
+          </div>
+
+          <div class="culture-history">
+            <h3>歴史</h3>
+            <p>平安時代の十二単に始まり、江戸時代に現代的な着物の形が定着しました。時代ごとに染め・織り・柄の変化があり、地域ごとの技法も発展しました。</p>
+          </div>
+
+          <div class="culture-links">
+            <a class="btn" href="https://example.com/kimono" target="_blank" rel="noopener noreferrer">公式・参考ページ</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 新しい文化はここに同じ構造で追加 -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 日本の文化紹介</p>
+  </footer>
+</body>
+</html>
